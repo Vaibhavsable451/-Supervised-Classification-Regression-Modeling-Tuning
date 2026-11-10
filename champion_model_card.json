@@ -1,0 +1,36 @@
+{
+  "champion": "Logistic Regression",
+  "threshold": 0.27128006069602256,
+  "best_params": {
+    "C": 6.351221010640703
+  },
+  "validation": {
+    "val_ROC_AUC": 0.8703,
+    "AUC_sd_folds": 0.0112,
+    "val_PR_AUC": 0.6474,
+    "threshold": 0.2713,
+    "precision": 0.533,
+    "recall": 0.6954,
+    "F1": 0.6034
+  },
+  "test": {
+    "test_ROC_AUC": 0.867,
+    "test_PR_AUC": 0.6323,
+    "Brier": 0.1037,
+    "precision": 0.5192,
+    "recall": 0.7152,
+    "F1": 0.6017
+  },
+  "features_dropped_as_leak_or_id": [
+    "customer_id",
+    "collections_status_30d_after"
+  ],
+  "seed": 42,
+  "versions": {
+    "python": "3.12.3",
+    "sklearn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "pandas": "3.0.6"
+  }
+}
